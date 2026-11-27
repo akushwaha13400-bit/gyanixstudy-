@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GYANIX STUDY - Learn Free, Grow Big</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #080808;
+  color: white;
+}
+
+header {
+  background: #111;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.logo {
+  color: #ffcc00;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.login {
+  background: #ffcc00;
+  color: black;
+  padding: 11px 20px;
+  border-radius: 7px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg,#111,#242000);
+}
+
+.hero h1 {
+  font-size: 43px;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #ffcc00;
+}
+
+.hero p {
+  color: #ddd;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: black;
+  padding: 14px 25px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 65px 7%;
+}
+
+.title {
+  text-align: center;
+  color: #ffcc00;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+}
+
+.card {
+  background: #181818;
+  border: 1px solid #444;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: .3s;
+}
+
+.card:hover {
+  border-color: #ffcc00;
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #ffcc00;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 18px;
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.banner {
+  background: #ffcc00;
+  color: black;
+  text-align: center;
+  padding: 50px 15px;
+}
+
+.banner h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #111;
+  padding: 30px;
+  text-align: center;
+  color: #aaa;
+}
+
+footer span {
+  color: #ffcc00;
+}
+
+@media(max-width:700px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">GYANIX STUDY</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#teachers">Teachers</a>
+    <a href="#notes">Notes</a>
+  </nav>
+
+  <a href="#login" class="login">Student Login</a>
+</header>
+
+<div class="hero" id="home">
+  <h1>Welcome to <span>GYANIX STUDY</span></h1>
+  <p>Your Success, Our Mission!</p>
+  <p>JEE | NEET | Class 9th - 12th</p>
+  <a href="#courses" class="btn">Explore Free Courses</a>
+</div>
+
+<section id="courses">
+  <h2 class="title">Our Free Courses</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>JEE Preparation</h3>
+      <p>Physics, Chemistry & Mathematics</p>
+      <a href="#login">Explore →</a>
+    </div>
+
+    <div class="card">
+      <h3>NEET Preparation</h3>
+      <p>Physics, Chemistry & Biology</p>
+      <a href="#login">Explore →</a>
+    </div>
+
+    <div class="card">
+      <h3>Class 9th & 10th</h3>
+      <p>All Subjects Study Material</p>
+      <a href="#login">Explore →</a>
+    </div>
+
+    <div class="card">
+      <h3>Class 11th & 12th</h3>
+      <p>Science & Board Preparation</p>
+      <a href="#login">Explore →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="teachers">
+  <h2 class="title">Our Teachers</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Physics Faculty</h3>
+      <p>Learn Physics with clear concepts.</p>
+    </div>
+
+    <div class="card">
+      <h3>Chemistry Faculty</h3>
+      <p>Understand Chemistry easily.</p>
+    </div>
+
+    <div class="card">
+      <h3>Maths Faculty</h3>
+      <p>Build strong mathematical concepts.</p>
+    </div>
+
+    <div class="card">
+      <h3>Biology Faculty</h3>
+      <p>Prepare Biology with confidence.</p>
+    </div>
+  </div>
+</section>
+
+<section id="notes">
+  <h2 class="title">Notes & Study Material</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>PDF Notes</h3>
+      <p>Study material will be available here.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mock Tests</h3>
+      <p>Practice tests coming soon.</p>
+    </div>
+
+    <div class="card">
+      <h3>Video Lectures</h3>
+      <p>Educational video resources coming soon.</p>
+    </div>
+  </div>
+</section>
+
+<div class="banner" id="login">
+  <h2>Start Your Learning Journey!</h2>
+  <p>GYANIX STUDY - Learn Free, Grow Big!</p>
+</div>
+
+<footer>
+  <p>© 2026 <span>GYANIX STUDY</span>. All Rights Reserved.</p>
+  <p>Free Education For Everyone.</p>
+</footer>
+
+</body>
+</html>
